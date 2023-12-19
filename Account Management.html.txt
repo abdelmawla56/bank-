@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Servers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .option-button {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #009688;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .option-button:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>$#Welcome to Account Management#$ </h4>
+        <h5>Select option you want to do : </h5>
+        <button class="option-button" onclick="redirectToPage('/withdrawal-page.html')">Withdrawal</button>
+        <button class="option-button" onclick="redirectToPage('/deposit-page.html')">Deposit</button>
+        <button class="option-button" onclick="redirectToPage('/transfer-page.html')">Transfer</button>
+        <button class="option-button" onclick="redirectToPage('/borrowing-page.html')">Borrowing</button>
+        <button class="option-button" onclick="redirectToPage('/exchange-page.html')">Exchange of Currency</button>
+        <button class="option-button" onclick="redirectToPage('/exchange-page.html')">Create a bank account</button>
+    </div>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

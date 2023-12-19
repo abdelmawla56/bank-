@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Alerts</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .alert-button, .option-button {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #009688;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .alert-button:hover, .option-button:hover {
+            background-color: #00796b;
+        }
+
+        .alert-results, .option-results {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Account Alerts</h1>
+        <button class="alert-button" onclick="showAlerts()">View Alerts</button>
+        <div class="alert-results" id="alertResults">
+            <!-- This is where you would dynamically display account alerts -->
+            <!-- For simplicity, let's just show a sample message -->
+            <p>Low balance alert: Your account balance is below the minimum threshold.</p>
+        </div>
+
+        <button class="option-button" onclick="showProfits()">View Profits</button>
+        <button class="option-button" onclick="showLosses()">View Losses</button>
+        <button class="option-button" onclick="showAccountValue()">View Account Value</button>
+        <button class="option-button" onclick="showMoneyEvaluation()">View Money Evaluation</button>
+        <div class="option-results" id="optionResults">
+            <!-- This is where you would dynamically display the results for profits, losses, account value, and money evaluation -->
+        </div>
+    </div>
+
+    <script>
+        function showAlerts() {
+            var alertResults = document.getElementById("alertResults");
+            var optionResults = document.getElementById("optionResults");
+            alertResults.style.display = "block";
+            optionResults.style.display = "none";
+        }
+
+        function showProfits() {
+            var optionResults = document.getElementById("optionResults");
+            optionResults.innerHTML = "<p>Profits: $1000</p>";
+            optionResults.style.display = "block";
+        }
+
+        function showLosses() {
+            var optionResults = document.getElementById("optionResults");
+            optionResults.innerHTML = "<p>Losses: $500</p>";
+            optionResults.style.display = "block";
+        }
+
+        function showAccountValue() {
+            var optionResults = document.getElementById("optionResults");
+            optionResults.innerHTML = "<p>Account Value: $10,000</p>";
+            optionResults.style.display = "block";
+        }
+
+        function showMoneyEvaluation() {
+            var optionResults = document.getElementById("optionResults");
+            optionResults.innerHTML = "<p>Money Evaluation: Positive</p>";
+            optionResults.style.display = "block";
+        }
+    </script>
+</body>
+</html>

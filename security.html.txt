@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking System Requirements</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .requirement-options {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .requirement-option {
+      flex: 50%;
+      padding: 10px;
+    }
+
+    .requirement-option input[type="radio"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Banking System Requirements</h1>
+  </header>
+
+  <main>
+    <section id="security">
+      <h2>Security</h2>
+      <p>The system should have robust security measures in place, including encryption, secure communication protocols, and regular security audits to protect user data and transactions.</p>
+      <div class="requirement-options">
+        <div class="requirement-option">
+          <input type="radio" name="security-option" id="encryption-option" value="encryption">
+          <label for="encryption-option">Encryption</label>
+        </div>
+        <div class="requirement-option">
+          <input type="radio" name="security-option" id="protocols-option" value="protocols">
+          <label for="protocols-option">Secure Communication Protocols</label>
+        </div>
+        <div class="requirement-option">
+          <input type="radio" name="security-option" id="audits-option" value="audits">
+          <label for="audits-option">Regular Security Audits</label>
+        </div>
+      </div>
+    </section>
+
+    <section id="performance">
+      <h2>Performance</h2>
+      <p>The system should be highly responsive, with minimal latency, to provide a smooth user experience even during peak usage periods.</p>
+      <div class="requirement-options">
+        <div class="requirement-option">
+          <input type="radio" name="performance-option" id="responsiveness-option" value="responsiveness">
+          <label for="responsiveness-option">Responsiveness</label>
+        </div>
+        <div class="requirement-option">
+          <input type="radio" name="performance-option" id="latency-option" value="latency">
+          <label for="latency-option">Minimal Latency</label>
+        </div>
+      </div>
+    </section>
+
+    <section id="scalability">
+      <h2>Scalability</h2>
+      <p>The system should be designed to handle a growing number of users and transactions without significant degradation in performance, allowing for future expansion and increased system load.</p>
+      <div class="requirement-options">
+        <div class="requirement-option">
+          <input type="radio" name="scalability-option" id="handling-option" value="handling">
+          <label for="handling-option">Handling User & Transaction Growth</label>
+        </div>
+        <div class="requirement-option">
+          <input type="radio" name="scalability-option" id="expansion-option" value="expansion">
+          <label for="expansion-option">Allowing Future Expansion</label>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

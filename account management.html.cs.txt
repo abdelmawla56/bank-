@@ -1,0 +1,11 @@
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace Abdelmawla.Pages;
+
+public class UserAccount : PageModel
+{
+    public void OnGet()
+    {
+        
+    }
+}

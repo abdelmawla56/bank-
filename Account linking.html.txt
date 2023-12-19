@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Banking System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#accounts">Accounts</a></li>
+            <li><a href="#transactions">Transactions</a></li>
+            <li><a href="#account-linking">Account Linking</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="accounts">
+            <h2>Accounts</h2>
+            <p>Please choose an account type:</p>
+            <form action="/create-account" method="post">
+                <input type="radio" id="checking" name="accountType" value="checking" required>
+                <label for="checking">Checking</label><br>
+                <input type="radio" id="savings" name="accountType" value="savings" required>
+                <label for="savings">Savings</label><br>
+                <input type="radio" id="investment" name="accountType" value="investment" required>
+                <label for="investment">Investment</label><br>
+                <input type="submit" value="Create Account">
+            </form>
+        </section>
+
+        <section id="transactions">
+            <h2>Transactions</h2>
+            <p>Please select a transaction type:</p>
+            <ul>
+                <li><a href="#deposit">Deposit</a></li>
+                <li><a href="#withdraw">Withdraw</a></li>
+                <li><a href="#transfer">Transfer</a></li>
+            </ul>
+        </section>
+
+        <section id="account-linking">
+            <h2>Account Linking</h2>
+            <form action="/link-accounts" method="post">
+                <label for="account">Account Number:</label>
+                <input type="text" id="account" name="account" required>
+                <input type="submit" value="Link Account">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Online Banking System</p>
+    </footer>
+</body>
+</html>

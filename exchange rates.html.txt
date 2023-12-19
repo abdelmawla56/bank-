@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Exchange Rates</h2>
+        <p>Select your currency and enter the amount to convert below:</p>
+
+        <label for="currency">Currency:</label>
+        <select id="currency" name="currency">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+        </select>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" min="0">
+
+        <button class="button">Convert</button>
+    </div>
+</body>
+</html>
