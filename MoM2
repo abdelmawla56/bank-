@@ -1,0 +1,51 @@
+Meeting Minutes
+
+Date: 11 Dec 2023
+
+Time: 21:00
+
+Location: Online Meeting
+
+Attendees:
+- sara mostafa
+- youssef ahmed
+- ahmed gamal
+
+Agenda:
+- Progress update on designs
+- review on any challenges
+- finish the websits,CRC card and the code of the back end 
+
+Minutes:
+
+1. Rescheduled Meeting:
+We did it in the time
+
+2. Design Pattern Implementation:
+   - Team members provided updates on the implementation of discussed design patterns, sharing insights and challenges faced during the process.
+
+3.website design 
+1-youssef designed the web bage of (Customer Support,Exchange Rates,Transaction Limits,Mobile Banking)
+2-sara designed the web bage of (Account Closure,Secure Authentication,Standing Instructions,Third-Party)
+3-ahmed designed the web bage of (Statement Export,Account Linking,Audit Trail) 
+
+4.the backend
+1-the class of user account 
+2-the class of home bage 
+3-the class of transaction
+
+4. Discussion on Challenges:
+   - Team members discussed any challenges or roadblocks encountered during the implementation of design patterns and other tasks. Collaborative solutions were proposed.
+
+5. Next Steps:
+   - The team outlined the next steps for incorporating the discussed design patterns into the project. 
+   -continue the back end
+
+
+Action Items:
+- All team members: Continue with the implementation of design patterns and address any challenges encountered.
+
+Next Meeting:
+- Date: Tuesday 12 December 2023
+- Time: 19:00
+- Location: Online Meeting
